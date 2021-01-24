@@ -1,0 +1,64 @@
+@import "./partials/colors";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+#root {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.btn {
+  &-next {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px 16px;
+    background-color: $primary;
+    color: #fff;
+    float: right;
+  }
+  &-back {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: $primary;
+  }
+}
+.fields {
+  &-enter {
+    opacity: 0;
+    &-active {
+      opacity: 1;
+      transition: opacity 300ms;
+    }
+  }
+  &-exit {
+    opacity: 1;
+    &-active {
+      opacity: 0;
+      transition: opacity 300ms;
+    }
+  }
+}

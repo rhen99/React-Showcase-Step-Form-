@@ -1,0 +1,47 @@
+@import "../../partials/colors";
+.header {
+  border-bottom: 3px solid $primary;
+  &-container {
+    display: flex;
+  }
+  &-logo {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    a {
+      display: block;
+      font-weight: 900;
+      font-size: 24px;
+
+      color: #333;
+    }
+    span {
+      color: $primary;
+    }
+  }
+  &-nav {
+    label {
+      display: block;
+      height: 30px;
+      width: 50px;
+      background-color: #ddd;
+      border-radius: 50px;
+    }
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  &-link {
+    display: block;
+    padding: 16px;
+    color: #333;
+  }
+  #dark-mode {
+    position: absolute;
+    left: -99999px;
+  }
+}
+@import "../../partials/toggles";
